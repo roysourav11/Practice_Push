@@ -1,0 +1,63 @@
+{
+  "name": "Document_Understanding_Practice",
+  "projectId": "d8cd1c38-13e3-46a3-bfa1-8e63a8aa2654",
+  "description": "Blank Process",
+  "main": "Main_NewGenAI.xaml",
+  "dependencies": {
+    "UiPath.DocumentUnderstanding.Activities": "[3.2.0-preview]",
+    "UiPath.DocumentUnderstanding.ML.Activities": "[2.2.0-preview]",
+    "UiPath.Excel.Activities": "[3.5.1]",
+    "UiPath.IntelligentOCR.Activities": "[7.2.0-preview]",
+    "UiPath.OmniPage.Activities": "[2.1.0-preview]",
+    "UiPath.System.Activities": "[26.6.0]",
+    "UiPath.UIAutomation.Activities": "[26.4.4-preview]"
+  },
+  "webServices": [],
+  "entitiesStores": [],
+  "schemaVersion": "4.0",
+  "studioVersion": "26.0.195.0",
+  "projectVersion": "1.0.0",
+  "runtimeOptions": {
+    "autoDispose": false,
+    "netFrameworkLazyLoading": false,
+    "isPausable": true,
+    "isAttended": false,
+    "requiresUserInteraction": true,
+    "supportsPersistence": false,
+    "workflowSerialization": "NewtonsoftJson",
+    "excludedLoggedData": [
+      "Private:*",
+      "*password*"
+    ],
+    "executionType": "Workflow",
+    "readyForPiP": false,
+    "startsInPiP": false,
+    "mustRestoreAllDependencies": true,
+    "pipType": "ChildSession"
+  },
+  "designOptions": {
+    "projectProfile": "Developement",
+    "outputType": "Process",
+    "libraryOptions": {
+      "privateWorkflows": []
+    },
+    "processOptions": {
+      "ignoredFiles": []
+    },
+    "fileInfoCollection": [],
+    "saveToCloud": false
+  },
+  "expressionLanguage": "VisualBasic",
+  "entryPoints": [
+    {
+      "filePath": "Main_NewGenAI.xaml",
+      "uniqueId": "66bdf09b-f05c-4917-b9e4-4402b17fbe9e",
+      "input": [],
+      "output": []
+    }
+  ],
+  "isTemplate": false,
+  "templateProjectData": {},
+  "publishData": {},
+  "targetFramework": "Windows"
+}
