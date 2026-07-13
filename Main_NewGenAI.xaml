@@ -113,7 +113,7 @@
       <AssemblyReference>NPOI.Core</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="845.2,1542.4" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="707.6,1716.8" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="uisad:DocumentData" Name="ClassificationResult" />
       <Variable x:TypeArguments="uisad1:IDocumentData(uisascb:CustomGptDocumentType6D4F18F869134A899990293Dda0F1639)" Name="ExtractionResult" />
@@ -123,7 +123,7 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:ForEachFileX DisplayName="For Each File in Folder" Folder="C:\Users\royso\OneDrive\Documents\UiPath\Document_Understanding_Practice\Invoices" sap:VirtualizedContainerService.HintSize="518.4,1519.2" sap2010:WorkflowViewState.IdRef="ForEachFileX_1" IncludeSubDirectories="False" OrderBy="NameAscFirst" SkipFolderWithoutPermission="False">
+    <ui:ForEachFileX DisplayName="For Each File in Folder" Folder="C:\Users\royso\OneDrive\Documents\UiPath\Document_Understanding_Practice\Invoices" sap:VirtualizedContainerService.HintSize="518.4,1693.6" sap2010:WorkflowViewState.IdRef="ForEachFileX_1" IncludeSubDirectories="False" OrderBy="NameAscFirst" SkipFolderWithoutPermission="False">
       <ui:ForEachFileX.Body>
         <ActivityAction x:TypeArguments="si:FileInfo, x:Int32">
           <ActivityAction.Argument1>
@@ -132,12 +132,13 @@
           <ActivityAction.Argument2>
             <DelegateInArgument x:TypeArguments="x:Int32" Name="CurrentIndex" />
           </ActivityAction.Argument2>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="484.8,1232.8" sap2010:WorkflowViewState.IdRef="Sequence_2">
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="484.8,1407.2" sap2010:WorkflowViewState.IdRef="Sequence_2">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
+            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="451.2,174.4" sap2010:WorkflowViewState.IdRef="LogMessage_3" Level="Info" Message="[&quot;Starting&quot;]" />
             <p:ClassifyDocument ApiKey="{x:Null}" ClassifierResult="{x:Null}" DocumentObjectModel="{x:Null}" DocumentPath="{x:Null}" DocumentText="{x:Null}" DocumentTypes="{x:Null}" PersistenceId="{x:Null}" PredictionId="{x:Null}" ProjectVersionNumber="{x:Null}" RuntimeAssetPath="{x:Null}" RuntimeTenantUrl="{x:Null}" ClassificationResults="[ClassificationResult]" ClassifierId="generative_classifier" ClassifierName="Generative Classifier" DisplayName="Classify Document" Endpoint="https://cloud.uipath.com/ed125c8b-aa09-47b1-ad4f-1e78e22749e5/f8181ae3-553a-4515-9e45-081775e0c793/du_/api/framework/projects/00000000-0000-0000-0000-000000000001/classifiers/generative_classifier/classification/start?api-version=2.0" FileInput="[LocalResource.FromPath(CurrentFile.ToString)]" sap:VirtualizedContainerService.HintSize="451.2,276.8" sap2010:WorkflowViewState.IdRef="ClassifyDocument_1" MinimumConfidence="50" ProjectId="00000000-0000-0000-0000-000000000001" ProjectName="Generative Predefined" TimeoutInSeconds="3600">
               <p:ClassifyDocument.GptPromptWithVariables>
                 <InArgument x:TypeArguments="x:String" x:Key="Invoice">Is this document a Invoice?</InArgument>
