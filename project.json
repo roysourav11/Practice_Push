@@ -2,7 +2,7 @@
   "name": "Document_Understanding_Practice",
   "projectId": "d8cd1c38-13e3-46a3-bfa1-8e63a8aa2654",
   "description": "Blank Process",
-  "main": "Main_NewGenAI.xaml",
+  "main": "DU_NewGenAI.xaml",
   "dependencies": {
     "UiPath.DocumentUnderstanding.Activities": "[3.2.0-preview]",
     "UiPath.DocumentUnderstanding.ML.Activities": "[2.2.0-preview]",
@@ -50,8 +50,8 @@
   "expressionLanguage": "VisualBasic",
   "entryPoints": [
     {
-      "filePath": "Main_NewGenAI.xaml",
-      "uniqueId": "66bdf09b-f05c-4917-b9e4-4402b17fbe9e",
+      "filePath": "DU_NewGenAI.xaml",
+      "uniqueId": "6e8a426c-73d0-4a6d-8650-b5efee6a60f0",
       "input": [],
       "output": []
     }

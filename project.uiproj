@@ -2,5 +2,5 @@
   "Name": "Document_Understanding_Practice",
   "ProjectType": "Process",
   "Description": "Blank Process",
-  "MainFile": "Main_NewGenAI.xaml"
+  "MainFile": "DU_NewGenAI.xaml"
 }

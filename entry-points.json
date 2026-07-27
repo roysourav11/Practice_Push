@@ -2,8 +2,8 @@
   "$schema": "https://cloud.uipath.com/draft/2024-12/entry-point",
   "entryPoints": [
     {
-      "filePath": "Main_NewGenAI.xaml",
-      "uniqueId": "66bdf09b-f05c-4917-b9e4-4402b17fbe9e",
+      "filePath": "DU_NewGenAI.xaml",
+      "uniqueId": "6e8a426c-73d0-4a6d-8650-b5efee6a60f0",
       "type": "process"
     }
   ]
